@@ -97,7 +97,11 @@ fun main(args:Array<String>){
 
 }
 
-class Car(val color:String, val name:String, val age :Int){ //주 생성자
+//매개변수도 var/val로 세팅이 가능하다..
+// val 인 경우 setter로 변경 불가능하다!
+class Car(var color:String = "red", val name:String, val age :Int){ //주 생성자(Primary Constructor)
+    //class Car private constructor(color: String .. )
+    // -> private class가 아니라 primary constructor가 private 인것임 이 경우 constructor 를 생략불가
 
     //맨 처음 객체가 실행될 때 실행될 내용
     init {

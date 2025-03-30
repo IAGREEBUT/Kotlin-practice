@@ -22,7 +22,7 @@ fun main(args:Array<String>){
     List : 순서가 있는 자료구조
      */
 
-    //immutable list : 수정 불가 리스트
+    //immutable list : 수정 불가 리스트 -> add등과 같은 함수를 제공하지 않음 
     var fruitList = listOf("Banana","Apple", "Melon")
 
     println("First fruit ${fruitList[0]}")
